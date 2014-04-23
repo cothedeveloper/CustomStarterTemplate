@@ -39,9 +39,17 @@ angular.module( 'ngBoilerplate.home', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'HomeCtrl', function HomeController( $scope,configService ) {
+.controller( 'HomeCtrl', function HomeController( $scope,configService,createService) {
 
 $scope.firstVariable="Scope Variable";
+$scope.createUser = function(formData) {
+createService.createUser(this.id,this.fName,this.lName,this.perGender);
+console.log(this.formData);
+console.log(this.fName);
+
+};
+
+
 })
 
 ;

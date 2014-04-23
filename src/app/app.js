@@ -4,7 +4,8 @@ angular.module( 'ngBoilerplate', [
   'ngBoilerplate.home',
   'ui.state',
   'ui.route',
-  'configurationService'
+  'configurationService',
+  'createService'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
